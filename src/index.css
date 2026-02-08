@@ -4,43 +4,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+
 /* SmileCare Dental Clinic Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    --background: 240 4% 95%;
+    --foreground: 240 5% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card: 0 0% 98%;
+    --card-foreground: 240 5% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover: 240 5% 90%;
+    --popover-foreground: 240 5% 10%;
 
     /* Primary Blue - #1E88E5 */
-    --primary: 207 79% 51%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 258 89% 66%;
+    --primary-foreground: 250 100% 97%;
 
     /* Secondary - Light Gray #F5F5F5 */
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 215 25% 15%;
+    --secondary: 240 5% 33%;
+    --secondary-foreground: 0 0% 98%;
 
     /* Muted */
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 240 4% 83%;
+    --muted-foreground: 240 5% 10%;
 
     /* Accent - Light Blue #E3F2FD */
-    --accent: 207 89% 94%;
-    --accent-foreground: 207 79% 40%;
+    --accent: 269 100% 98%;
+    --accent-foreground: 270 91% 65%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 85% 97%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 207 79% 51%;
+    --border: 240 4% 83%;
+    --input: 240 4% 83%;
+    --ring: 258 89% 66%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Custom dental clinic tokens */
     --dental-blue: 207 79% 51%;
@@ -49,54 +55,73 @@
     --dental-navy: 213 50% 20%;
     --dental-gray: 0 0% 96%;
     --dental-white: 0 0% 100%;
-    
+
     /* Gradients */
     --gradient-dental: linear-gradient(135deg, hsl(207 79% 51%) 0%, hsl(207 79% 40%) 100%);
     --gradient-hero: linear-gradient(135deg, hsl(207 79% 51% / 0.9) 0%, hsl(213 50% 20% / 0.95) 100%);
-    
+
     /* Shadows */
     --shadow-card: 0 4px 20px -4px hsl(207 79% 51% / 0.12);
     --shadow-elevated: 0 8px 30px -6px hsl(207 79% 51% / 0.18);
     --shadow-header: 0 2px 20px 0 hsl(215 25% 15% / 0.08);
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 207 79% 51%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 207 89% 94%;
-    --sidebar-accent-foreground: 207 79% 40%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 207 79% 51%;
+    --sidebar-foreground: 240 5% 10%;
+    --sidebar-primary: 258 89% 66%;
+    --sidebar-primary-foreground: 250 100% 97%;
+    --sidebar-accent: 240 5% 33%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 4% 83%;
+    --sidebar-ring: 258 89% 66%;
+    --chart-1: 255 91% 76%;
+    --chart-2: 270 95% 75%;
+    --chart-3: 234 89% 73%;
+    --chart-4: 258 89% 66%;
+    --chart-5: 240 3% 46%;
+    --sidebar: 0 0% 98%;
+    --font-sans: 'Montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    --font-serif: 'Cormorant Garamond', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+    --tracking-normal: 0em;
+    --spacing: 0.25rem;
   }
 
   .dark {
-    --background: 215 25% 9%;
+    --background: 240 5% 10%;
     --foreground: 0 0% 98%;
 
-    --card: 215 25% 12%;
+    --card: 240 3% 15%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 215 25% 12%;
+    --popover: 240 5% 26%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 207 79% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 255 91% 76%;
+    --primary-foreground: 261 72% 22%;
 
-    --secondary: 215 25% 18%;
+    --secondary: 240 3% 46%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 215 25% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 240 3% 46%;
+    --muted-foreground: 0 0% 98%;
 
-    --accent: 207 50% 25%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 273 86% 20%;
+    --accent-foreground: 270 95% 75%;
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 85% 97%;
 
-    --border: 215 25% 18%;
-    --input: 215 25% 18%;
-    --ring: 207 79% 55%;
+    --border: 240 5% 33%;
+    --input: 240 5% 33%;
+    --ring: 255 91% 76%;
 
     --dental-blue: 207 79% 55%;
     --dental-blue-dark: 207 79% 45%;
@@ -105,12 +130,26 @@
 
     --sidebar-background: 215 25% 9%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 207 79% 55%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 207 50% 25%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 215 25% 18%;
-    --sidebar-ring: 207 79% 55%;
+    --sidebar-primary: 255 91% 76%;
+    --sidebar-primary-foreground: 261 72% 22%;
+    --sidebar-accent: 270 95% 75%;
+    --sidebar-accent-foreground: 273 86% 20%;
+    --sidebar-border: 240 5% 33%;
+    --sidebar-ring: 255 91% 76%;
+    --chart-1: 252 94% 85%;
+    --chart-2: 269 97% 85%;
+    --chart-3: 229 93% 81%;
+    --chart-4: 255 91% 76%;
+    --chart-5: 240 3% 46%;
+    --sidebar: 240 3% 15%;
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   }
 }
 
