@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import TopInfoBar from "@/components/layout/TopInfoBar";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import FloatingButtons from "@/components/FloatingButtons";
+import HeroCarousel from "@/components/sections/HeroCarousel";
+import WelcomeSection from "@/components/sections/WelcomeSection";
+import WhyChooseUs from "@/components/sections/WhyChooseUs";
+import Statistics from "@/components/sections/Statistics";
+import ServicesSection from "@/components/sections/ServicesSection";
+import DoctorsSection from "@/components/sections/DoctorsSection";
+import GallerySection from "@/components/sections/GallerySection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import LocationContact from "@/components/sections/LocationContact";
+import CTABanner from "@/components/sections/CTABanner";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <TopInfoBar />
+      <Header />
+      
+      <main className="flex-1">
+        <HeroCarousel />
+        <WelcomeSection />
+        <WhyChooseUs />
+        <Statistics />
+        <ServicesSection />
+        <DoctorsSection />
+        <GallerySection />
+        <TestimonialsSection />
+        <LocationContact />
+        <CTABanner />
+      </main>
+      
+      <Footer />
+      <FloatingButtons />
     </div>
   );
 };
